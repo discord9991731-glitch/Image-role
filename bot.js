@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes, PermissionFlagsBits } = require('discord.js');
 
 // ── Config ──────────────────────────────────────────────────────────────────
-const TOKEN = 'MTQ4MjcyMDg4MTExNjcwOTA0NA.GCaNcM.fMQzZcwLdiHKZ0LnAKrbL0TM8f1kVdzYqk6XUs';
+const TOKEN = process.env.DISCORD_TOKEN;
 const CLIENT_ID = '1482720881116709044';
 
 // In-memory store: guildId → { channelId, requiredImages, roleId }
